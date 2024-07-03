@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-custom-dark;
+    /*cursor: url('/cursor.png') 16 16, auto;*/
+
+    background-image: url('./network.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Syne';
+    src: url('/fonts/Syne-Mono.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 !important;
+}
+/*.custom-cursor {*/
+/*    cursor: url('/cursor.png') 16 16, auto;*/
+/*}*/
+
+/* Spezifische Regeln für Überschriften */
+h1, h2, h3, h4, h5, h6 {
+    color: #1FFFC9;
+    font-family: 'Syne', sans-serif;
+}
+
+a {
+    font-weight: 400;
+}
+
+.code-container {
+    @apply bg-gray-800 text-green-400 p-4 rounded-md;
+
+    max-width: 100%;
+    min-width: 300px;
+    font-family: monospace;
+    font-size: 1em;
+    white-space: pre-wrap;
+}
+@media (max-width: 640px) {
+    .code-container {
+        font-size: 0.9em;
+    }
+}
+
+.custom-shadow {
+    box-shadow: 0 -10px 10px -10px rgba(31, 255, 201, 1), 0 10px 10px -10px rgba(31, 255, 201, 1);
+}

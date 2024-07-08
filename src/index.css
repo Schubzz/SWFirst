@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply bg-accent
+}
+
 body {
-    @apply bg-custom-dark;
     /*cursor: url('/cursor.png') 16 16, auto;*/
 
     background-image: url('./network.webp');
@@ -91,4 +94,29 @@ a {
 
 .custom-shadow {
     box-shadow: 0 -10px 10px -10px rgba(31, 255, 201, 1), 0 10px 10px -10px rgba(31, 255, 201, 1);
+}
+
+.pros-container {
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: #1FFFC9 1px solid;
+    h3 {
+        font-size: clamp(1rem, 4vw + 1rem, 5rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .group:hover .group-hover\:text-black {
+        color: black;
+    }
+
+    .group:hover .group-hover\:bg-accent {
+        background-color: var(--accent-color);
+    }
+
+    .group:hover .group-hover\:opacity-100 {
+        opacity: 1;
+    }
 }

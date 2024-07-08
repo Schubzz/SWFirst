@@ -5,6 +5,7 @@ import Lifecycle from "../Sections/SW/Lifecycle.tsx";
 import ActionsSquares from "../Sections/SW/ActionsSquares.tsx";
 import Actions from "../Sections/SW/Actions.tsx";
 import Description from "../Sections/SW/Description.tsx";
+import Pros from "../Sections/SW/Pros.tsx";
 
 const Sw = () => {
   return (
@@ -12,6 +13,7 @@ const Sw = () => {
         <Menu />
         <Intro />
         <Description />
+        <Pros />
         <LifecycleSquares/>
         <Lifecycle/>
         <ActionsSquares />

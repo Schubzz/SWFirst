@@ -9,7 +9,7 @@ html {
 body {
     /*cursor: url('/cursor.png') 16 16, auto;*/
 
-    background-image: url('./network.webp');
+    background-image: url('/network.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ body {
 
 @font-face {
     font-family: 'Syne';
-    src: url('/fonts/Syne-Mono.ttf') format('truetype');
+    src: url('/fonts/Syne-Bold.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }

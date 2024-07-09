@@ -18,13 +18,13 @@ const Description = () => {
                 </div>
 
                 <img src="NoWifiNoProblem.png" alt="No Wifi No Problem"
-                     className="md:max-h-[80vh] drop-shadow-accent "/>
+                     className="max-h-[50vh] md:max-h-[80vh] drop-shadow-accent "/>
             </div>
 
             <div className="flex flex-wrap-reverse p-10 bg-black bg-opacity-50 overflow-x-hidden justify-center items-center gap-20 md:gap-60 min-h-screen w-screen">
 
                 <img src="Architecture.png" alt="No Wifi No Problem"
-                     className="md:max-h-[40vh] drop-shadow-accent "/>
+                     className="max-h-[30vh] md:max-h-[40vh] drop-shadow-accent "/>
                 <div>
                     <h1 className="mb-6 text-left text-3xl md:text-5xl">
                         <span className="text-white">Einsatzbereiche von </span><br/>Service Workern

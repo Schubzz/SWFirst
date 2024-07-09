@@ -14,7 +14,7 @@ const Lifecycle = () => {
   };
 
   return (
-    <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black bg-opacity-95 text-white">
+    <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black bg-opacity-50 text-white">
       <div className="max-w-4xl w-full">
         <h2 className="text-5xl font-bold mb-8 text-center">Lifecycle</h2>
 

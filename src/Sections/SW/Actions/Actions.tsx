@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
-import CopyButton from '../../Components/CopyButton.tsx';
+import { useState } from 'react';
+import CopyButton from '../../../Components/CopyButton';
+import FetchAccordion from './FetchAccordion';
+import PushAccordion from './PushAccordion';
+import UpdateAccordion from './UpdateAccordion';
 
 const Actions = () => {
     const [copiedButton, setCopiedButton] = useState<string | null>(null);
@@ -17,6 +20,11 @@ const Actions = () => {
                 {/* Fetch */}
                 <div className="mb-8 flex flex-wrap flex-col relative">
                     <h3 className="text-3xl font-semibold my-6">Fetch-Ereignis</h3>
+
+                    <p className="mb-8">
+                        Das Fetch-Ereignis ermöglicht es dem Service Worker, Netzwerkanfragen abzufangen und Ressourcen aus dem Cache oder dem Netzwerk bereitzustellen. Dies verbessert die Ladezeiten und ermöglicht den Offline-Zugriff auf die Webanwendung.
+                    </p>
+
                     <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
                         <CopyButton
                             textToCopy={`self.addEventListener('fetch', event => {
@@ -46,9 +54,9 @@ self.addEventListener('fetch', event => {
                         <li>• Hört auf Fetch-Ereignisse, die ausgelöst werden, wenn die Anwendung eine Netzwerkanfrage macht.</li>
                         <li>• Überprüft, ob die angeforderte Ressource im Cache vorhanden ist und liefert sie aus dem Cache oder aus dem Netzwerk.</li>
                     </ul>
-                    <p className="mt-8">
-                        Das Fetch-Ereignis ermöglicht es dem Service Worker, Netzwerkanfragen abzufangen und Ressourcen aus dem Cache oder dem Netzwerk bereitzustellen. Dies verbessert die Ladezeiten und ermöglicht den Offline-Zugriff auf die Webanwendung.
-                    </p>
+
+                          <FetchAccordion />
+
                 </div>
 
                 <div className="w-full h-1 bg-[#1FFFC9] my-6"></div>
@@ -56,6 +64,11 @@ self.addEventListener('fetch', event => {
                 {/* Push */}
                 <div className="mb-8 flex flex-wrap flex-col relative">
                     <h3 className="text-3xl font-semibold my-6">Push-Ereignis</h3>
+
+                    <p className="mb-8">
+                        Das Push-Ereignis ermöglicht es dem Service Worker, Push-Benachrichtigungen zu empfangen und anzuzeigen. Dies ermöglicht es der Anwendung, Benutzer auch dann zu benachrichtigen, wenn sie nicht aktiv geöffnet ist.
+                    </p>
+
                     <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
                         <CopyButton
                             textToCopy={`self.addEventListener('push', event => {
@@ -91,9 +104,9 @@ self.addEventListener('push', event => {
                         <li>• Hört auf Push-Ereignisse, die ausgelöst werden, wenn der Server eine Push-Benachrichtigung sendet.</li>
                         <li>• Zeigt die Push-Benachrichtigung mit den angegebenen Optionen an.</li>
                     </ul>
-                    <p className="mt-8">
-                        Das Push-Ereignis ermöglicht es dem Service Worker, Push-Benachrichtigungen zu empfangen und anzuzeigen. Dies ermöglicht es der Anwendung, Benutzer auch dann zu benachrichtigen, wenn sie nicht aktiv geöffnet ist.
-                    </p>
+
+                          <PushAccordion />
+
                 </div>
 
                 <div className="w-full h-1 bg-[#1FFFC9] my-6"></div>
@@ -101,6 +114,11 @@ self.addEventListener('push', event => {
                 {/* Update */}
                 <div className="mb-8 flex flex-wrap flex-col relative">
                     <h3 className="text-3xl font-semibold my-6">Update</h3>
+
+                    <p className="mb-8">
+                        Das Update-Ereignis tritt auf, wenn ein neuer Service Worker gefunden wird. Es ermöglicht der Anwendung, den Benutzer über neue Inhalte zu informieren und gegebenenfalls die Seite neu zu laden, um die neuesten Änderungen zu übernehmen.
+                    </p>
+
                     <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
                         <CopyButton
                             textToCopy={`self.addEventListener('updatefound', () => {
@@ -138,9 +156,9 @@ self.addEventListener('updatefound', () => {
                         <li>• Hört auf das Update-Ereignis, das ausgelöst wird, wenn ein neuer Service Worker gefunden wird.</li>
                         <li>• Benachrichtigt den Benutzer über neue Inhalte und fordert ihn auf, die Seite zu aktualisieren.</li>
                     </ul>
-                    <p className="mt-8">
-                        Das Update-Ereignis tritt auf, wenn ein neuer Service Worker gefunden wird. Es ermöglicht der Anwendung, den Benutzer über neue Inhalte zu informieren und gegebenenfalls die Seite neu zu laden, um die neuesten Änderungen zu übernehmen.
-                    </p>
+
+                          <UpdateAccordion />
+
                 </div>
             </div>
         </section>

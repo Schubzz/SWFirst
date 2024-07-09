@@ -53,8 +53,7 @@ body {
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-
+    background-color: #1FFFC9;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -71,6 +70,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #1FFFC9;
     font-family: 'Syne', sans-serif;
+}
+h3 {
+    font-size: clamp(1rem, 2vw + 1rem, 5rem);
 }
 
 a {
@@ -102,8 +104,9 @@ a {
     flex-direction: column;
     padding: 1rem;
     border-bottom: #1FFFC9 1px solid;
+    
     h3 {
-        font-size: clamp(1rem, 4vw + 1rem, 5rem);
+        font-size: clamp(1rem, 2vw + 1rem, 5rem);
     }
 }
 

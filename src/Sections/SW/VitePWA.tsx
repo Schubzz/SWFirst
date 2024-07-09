@@ -1,4 +1,4 @@
-import { FaArrowRightLong, FaArrowTurnDown } from "react-icons/fa6"
+import { FaArrowRightLong } from "react-icons/fa6"
 import { Link } from "react-router-dom"
 
 const VitePWA = () => {

@@ -14,14 +14,17 @@
     border-radius: 4px;
     z-index: 1;
     text-align: left;
-    box-shadow: 3px 4px 5px 0 #8885;
-    background-color: #ff5858;
+    box-shadow: 0px 0px 5px 0 #1FFFC9;
+    background-color: #000508;
 }
 .PWABadge-toast-message {
+
     margin-bottom: 8px;
 }
 .PWABadge-toast-button {
-    border: 1px solid #8885;
+    color: #1FFFC9;
+    font-weight: 700;
+    border: 1px solid #1FFFC9;
     outline: none;
     margin-right: 5px;
     border-radius: 2px;

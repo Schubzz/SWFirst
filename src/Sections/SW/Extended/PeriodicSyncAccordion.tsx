@@ -5,7 +5,7 @@ const PeriodicSyncAccordion: React.FC = () => {
         <div className='my-6'>
             <details>
                 <summary className='text-accent'>Code Description</summary>
-                <div className="p-6 bg-slate-900">
+                <div className="max-w-[80vw] md:max-w-full p-2 bg-slate-900">
                     <pre className='code-container'>
 {`self.addEventListener('periodicsync', event => {`}
                     </pre>

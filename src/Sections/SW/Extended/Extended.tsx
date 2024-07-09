@@ -20,7 +20,7 @@ const Extended = () => {
 
                 {/* Hintergrundsynchronisation */}
                 <div className="mb-8 flex flex-wrap flex-col relative">
-                    <h3 className="text-3xl font-semibold my-6">Hintergrundsynchronisation</h3>
+                    <h3 className="text-3xl font-semibold my-6">Hintergrund Synchronisation</h3>
 
                     <p className="mb-8">
                         Hintergrundsynchronisation ermöglicht es, Daten im Hintergrund zu synchronisieren, auch wenn die Anwendung nicht aktiv genutzt wird. Dies verbessert die Zuverlässigkeit und Benutzererfahrung.
@@ -100,7 +100,7 @@ self.addEventListener('push', event => {
 
                 {/* Periodische Hintergrundsynchronisation */}
                 <div className="mb-8 flex flex-wrap flex-col relative">
-                    <h3 className="text-3xl font-semibold my-6">Periodische Hintergrundsynchronisation</h3>
+                    <h3 className="text-3xl font-semibold my-6">Periodische Hintergrund Synchronisation</h3>
 
                     <p className="mb-8">
                         Diese Funktion ermöglicht es, regelmäßige Hintergrundaufgaben auszuführen, z.B. das Aktualisieren von Inhalten.

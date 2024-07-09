@@ -3,7 +3,7 @@ const OverviewAccordion = () => {
         <div className='my-6'>
             <details>
                 <summary className='text-accent'>Überblick über Caching</summary>
-                <div className="p-6 bg-slate-900">
+                <div className="max-w-[80vw] md:max-w-full p-2 bg-slate-900">
                     <h4 className="text-white font-bold mb-2">Bedeutung des Caching:</h4>
                     <p className="text-gray-300 mb-4">
                         Caching spielt eine zentrale Rolle bei der Verbesserung der Performance von Webanwendungen. Es ermöglicht, häufig genutzte Dateien lokal zu speichern, was die Ladezeiten verkürzt und die Benutzererfahrung verbessert.

@@ -29,7 +29,7 @@ export default defineConfig({
             },
 
             manifest: {
-                theme_color: "#031a14",
+                theme_color: "#000508",
                 background_color: "#FFDDD2",
                 display: "standalone",
                 scope: "/",

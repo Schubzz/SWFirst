@@ -1,4 +1,5 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 const Menu = () => {
     return (
@@ -7,7 +8,7 @@ const Menu = () => {
                 <div className="bg-black w-full h-full bg-opacity-40 rounded-full ">
                     <ul className="flex justify-center items-center gap-4 md:gap-20 h-full">
                         <li className="text-xl font-bold hover:text-accent"><Link to="/">SW</Link></li>
-                        <li className="text-xl font-bold hover:text-accent"><Link to="/pwa">VitePWA</Link></li>
+                        <li className="text-xl font-bold hover:text-accent"><Link to="/pwa">VitePWA</Link></li>                    
                     </ul>
                 </div>
             </div>

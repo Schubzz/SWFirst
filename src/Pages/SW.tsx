@@ -12,10 +12,12 @@ import BestPractices from "../Sections/SW/BestPractices.tsx";
 import VitePWA from "../Sections/SW/VitePWA.tsx"
 import SWIntro from "../Sections/SW/SWIntro.tsx";
 import Menu from "../Components/Menu.tsx";
+import QuellenDownload from "../Components/QDownload.tsx";
 
 const Sw = () => {
   return (
-    <div>
+    <div className="relative">
+      <QuellenDownload />
       <Menu />
       <SWIntro />
       <Description />

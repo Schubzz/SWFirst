@@ -1,5 +1,3 @@
-import Menu from "../Components/Menu.tsx";
-import Intro from "../Sections/SW/Intro.tsx";
 import Description from "../Sections/SW/Description.tsx";
 import LifecycleSquares from "../Sections/SW/Lifecycle/LifecycleSquares.tsx";
 import Lifecycle from "../Sections/SW/Lifecycle/Lifecycle.tsx";
@@ -12,12 +10,12 @@ import ExtendedSquares from "../Sections/SW/Extended/ExtendedSquares.tsx";
 import Extended from "../Sections/SW/Extended/Extended.tsx";
 import BestPractices from "../Sections/SW/BestPractices.tsx";
 import VitePWA from "../Sections/SW/VitePWA.tsx"
+import SWIntro from "../Sections/SW/SWIntro.tsx";
 
 const Sw = () => {
   return (
     <div>
-        <Menu />
-        <Intro />
+        <SWIntro />
         <Description />
         <Pros />
         <LifecycleSquares/>

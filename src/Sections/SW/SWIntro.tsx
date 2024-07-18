@@ -1,4 +1,4 @@
-const Intro = () => {
+const SWIntro = () => {
     return (
         <section
             className="flex flex-col p-10 bg-black bg-opacity-50 overflow-x-hidden items-center justify-center min-h-screen w-screen">
@@ -8,4 +8,4 @@ const Intro = () => {
     )
 }
 
-export default Intro
+export default SWIntro

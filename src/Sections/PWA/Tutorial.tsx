@@ -10,7 +10,7 @@ const Tutorial = () => {
     };
 
     return (
-        <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black bg-opacity-50 text-white">
+        <section className="custom-shadow bg-black bg-opacity-85  p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen text-white">
             <div className="max-w-4xl w-full">
                 <h2 className="text-5xl font-bold mb-8 text-center">VitePWA Tutorial</h2>
 
@@ -22,7 +22,7 @@ const Tutorial = () => {
                         Zuerst initialisieren wir unser Projekt im Terminal. Wechsle in dein bevorzugtes Verzeichnis und starte den Initialisierungsbefehl:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`cd Dein_Verzeichnis
 npm create @vite-pwa/pwa@latest`}
@@ -78,7 +78,7 @@ npm create @vite-pwa/pwa@latest
                         Ich entscheide mich hier für die erste Variante, also lasse ich einen Service Worker generieren, um es einfacher zu gestalten. Die vollständige Initialisierung sieht dann so aus:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`npm create @vite-pwa/pwa@latest
 ✔ Project name: … SWFirst
@@ -142,7 +142,7 @@ Done. Now run:
                         Nachdem das Projekt erstellt wurde, wechsle in das Projektverzeichnis und installiere die Abhängigkeiten:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`cd SWFirst
 npm install`}
@@ -168,7 +168,7 @@ npm install
                         Öffne das Projekt in deienr IDE. Ich nutze hier VSCode. Für VSCode kannst du im Terminal den folgenden Befehl verwenden:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`code .`}
                             buttonId="vscode"
@@ -192,7 +192,7 @@ code .
                         Öffne ein neues Terminal in VSCode und installiere das VitePWA Plugin als Entwicklungsabhängigkeit:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`npm install -D vite-plugin-pwa`}
                             buttonId="plugin-install"
@@ -216,7 +216,7 @@ npm install -D vite-plugin-pwa
                         Öffne die <code className="text-accent">vite.config.ts</code> Datei. Die durch das Plugin erstellte Konfigurationsdatei sieht so aus:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`import { VitePWA } from 'vite-plugin-pwa';
 import { defineConfig } from 'vite'
@@ -301,7 +301,7 @@ export default defineConfig({
                         Ändere <code>enabled: false</code> zu <code>true</code>, damit du den Service Worker auch während der Entwicklung testen kannst:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`devOptions: {
   enabled: true,
@@ -333,7 +333,7 @@ devOptions: {
                         Starte den Entwicklungsserver:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`npm run dev`}
                             buttonId="dev-server"
@@ -363,7 +363,7 @@ npm run dev`}</pre>
                         Im nächsten Schritt solltest du das Manifest anpassen, um die Identität der Anwendung festzulegen. Hier ist ein Beispiel, wie du das Manifest konfigurieren kannst:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`manifest: {
   theme_color: "#000508",
@@ -563,7 +563,7 @@ manifest: {
                         Das generierte <code>sw.js</code> Skript kann angepasst werden, um zusätzliche Funktionalitäten und Caching-Strategien hinzuzufügen. Hier ist ein Beispiel, wie du das generierte Skript erweitern kannst:
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`import { precacheAndRoute } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';

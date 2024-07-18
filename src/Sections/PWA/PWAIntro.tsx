@@ -1,14 +1,13 @@
 const PWAIntro = () => {
 
     return (
-        <section
-            className="flex flex-col p-10  lg:pt-0 bg-black bg-opacity-50 overflow-x-hidden items-center justify-center min-h-screen w-screen">
-            
+        <section className="bg-black">
+        
             <div
-                className="flex flex-wrap p-10 bg-black bg-opacity-50 overflow-x-hidden justify-center items-center md:gap-60 min-h-screen w-screen">
+                className="flex flex-wrap p-10 overflow-x-hidden justify-center items-center md:gap-60 min-h-screen w-screen">
 
                 <div>
-                    <h2 className="mb-6 text-left text-3xl md:text-5xl">
+                    <h2 className="my-12 text-left text-3xl md:text-5xl">
                         <span className="text-white">Schritt für Schritt zur</span><br/> PWA mit VitePWA
                     </h2>
                     <p className="text-[1rem] md:text-xl max-w-lg">
@@ -23,6 +22,7 @@ const PWAIntro = () => {
                      className="max-h-[30vh] drop-shadow-accent "/>
             </div>
 
+            <div className="w-full h-1 bg-[#1FFFC9]"></div>
         </section>
     )
 }

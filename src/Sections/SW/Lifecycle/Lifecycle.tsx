@@ -14,7 +14,7 @@ const Lifecycle = () => {
   };
 
   return (
-    <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black bg-opacity-50 text-white">
+    <section className="custom-shadow bg-black p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen text-white">
       <div className="max-w-4xl w-full">
         <h2 className="text-5xl font-bold mb-8 text-center">Lifecycle</h2>
 
@@ -30,7 +30,7 @@ const Lifecycle = () => {
             es zu installieren und zu aktivieren.
           </p>
 
-          <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+          <div className="code-container">
             <CopyButton
               textToCopy={`navigator.serviceWorker.register('/service-worker.js')
 .then(function(registration) {
@@ -75,7 +75,7 @@ navigator.serviceWorker.register('/service-worker.js')
             im Cache. Dies ermöglicht der Webanwendung, diese Ressourcen im Offline-Modus zu nutzen.
           </p>
 
-          <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+          <div className="code-container">
             <CopyButton
               textToCopy={`self.addEventListener('install', event => {
   event.waitUntil(
@@ -131,7 +131,7 @@ self.addEventListener('install', event => {
             Ressourcen verwendet.
           </p>
 
-          <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+          <div className="code-container">
             <CopyButton
               textToCopy={`self.addEventListener('activate', event => {
   var cacheWhitelist = ['v2'];

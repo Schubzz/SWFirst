@@ -28,7 +28,7 @@ const ActionsSquares: React.FC = () => {
     
     return (
         <section
-            className="p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen">
+            className="bg-black bg-opacity-85 p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen">
             <h2 className="text-5xl z-10 font-bold">Service Worker Actions</h2>
 
             <motion.section

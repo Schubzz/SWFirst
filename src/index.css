@@ -61,10 +61,16 @@ body {
     padding: 0 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #1FFFC9;
     font-family: 'Syne', sans-serif;
 }
+
 h3 {
     font-size: clamp(1rem, 2vw + 1rem, 5rem);
 }
@@ -76,12 +82,14 @@ a {
 .code-container {
     @apply bg-gray-800 text-green-400 p-4 rounded-md;
 
+    position: relative;
     max-width: 100%;
     min-width: 300px;
     font-family: monospace;
     font-size: 1em;
     white-space: pre-wrap;
 }
+
 @media (max-width: 640px) {
     .code-container {
         font-size: 0.9em;
@@ -98,7 +106,7 @@ a {
     flex-direction: column;
     padding: 1rem;
     border-bottom: #1FFFC9 1px solid;
-    
+
     h3 {
         font-size: clamp(1rem, 2vw + 1rem, 5rem);
     }

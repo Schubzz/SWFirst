@@ -2,7 +2,7 @@ const PWADescription = () => {
     return (
         <section>
             <div
-                className="flex flex-col p-10 gap-10 overflow-x-hidden justify-center items-center min-h-screen w-screen">
+                className="bg-black flex flex-col p-10 gap-10 overflow-x-hidden justify-center items-center min-h-screen w-screen">
 
                 <div >
                     <p className="text-[1rem] md:text-xl max-w-lg">

@@ -2,7 +2,7 @@ const Description = () => {
     return (
         <section>
             <div
-                className="flex flex-wrap p-10 bg-black bg-opacity-50 overflow-x-hidden justify-center items-center gap-20 md:gap-60 min-h-screen w-screen">
+                className="flex flex-wrap p-10 bg-black overflow-x-hidden justify-center items-center gap-20 md:gap-60 min-h-screen w-screen">
 
                 <div>
                     <h2 className="mb-6 text-left text-3xl md:text-5xl"><span
@@ -21,7 +21,7 @@ const Description = () => {
                      className="max-h-[50vh] md:max-h-[80vh] drop-shadow-accent "/>
             </div>
 
-            <div className="flex flex-wrap-reverse p-10 bg-black bg-opacity-50 overflow-x-hidden justify-center items-center gap-20 md:gap-60 min-h-screen w-screen">
+            <div className="flex flex-wrap-reverse p-10 bg-black overflow-x-hidden justify-center items-center gap-20 md:gap-60 min-h-screen w-screen">
 
                 <img src="Architecture.png" alt="No Wifi No Problem"
                      className="max-h-[30vh] md:max-h-[40vh] drop-shadow-accent "/>

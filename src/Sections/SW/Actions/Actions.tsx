@@ -13,7 +13,7 @@ const Actions = () => {
     };
 
     return (
-        <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black bg-opacity-50 text-white">
+        <section className="custom-shadow bg-black p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen text-white">
             <div className="max-w-4xl w-full">
                 <h2 className="text-5xl font-bold mb-8 text-center">Actions</h2>
 
@@ -25,7 +25,7 @@ const Actions = () => {
                         Das Fetch-Ereignis ermöglicht es dem Service Worker, Netzwerkanfragen abzufangen und Ressourcen aus dem Cache oder dem Netzwerk bereitzustellen. Dies verbessert die Ladezeiten und ermöglicht den Offline-Zugriff auf die Webanwendung.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('fetch', event => {
   event.respondWith(
@@ -69,7 +69,7 @@ self.addEventListener('fetch', event => {
                         Das Push-Ereignis ermöglicht es dem Service Worker, Push-Benachrichtigungen zu empfangen und anzuzeigen. Dies ermöglicht es der Anwendung, Benutzer auch dann zu benachrichtigen, wenn sie nicht aktiv geöffnet ist.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('push', event => {
   const data = event.data.json();
@@ -119,7 +119,7 @@ self.addEventListener('push', event => {
                         Das Update-Ereignis tritt auf, wenn ein neuer Service Worker gefunden wird. Es ermöglicht der Anwendung, den Benutzer über neue Inhalte zu informieren und gegebenenfalls die Seite neu zu laden, um die neuesten Änderungen zu übernehmen.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('updatefound', () => {
   const installingWorker = self.installing;

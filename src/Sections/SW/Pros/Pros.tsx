@@ -4,7 +4,7 @@ import ProCards from "./ProCards"
 const Pros = () => {
     return (
         <section>
-            <div className="flex flex-col p-10 bg-black bg-opacity-50 overflow-x-hidden justify-center min-h-screen w-screen">
+            <div className="flex flex-col p-10 bg-black overflow-x-hidden justify-center min-h-screen w-screen">
                 <h2 className="mb-6 text-center text-3xl md:text-5xl">
                     <span className="text-white">Was sind die</span><br /> Pro's ?
                 </h2>

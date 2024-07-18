@@ -14,7 +14,7 @@ const CachingStrategies = () => {
     };
 
     return (
-        <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black bg-opacity-50 text-white">
+        <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black text-white">
             <div className="max-w-4xl w-full">
                 <h2 className="text-5xl font-bold mb-8 text-center">Caching</h2>
 
@@ -34,7 +34,7 @@ const CachingStrategies = () => {
                         Diese Strategie sucht zuerst im Cache nach einer Antwort. Wenn die Antwort nicht im Cache vorhanden ist, wird eine Netzwerk-Anfrage gestellt. Dies führt zu schnelleren Ladezeiten bei wiederholten Besuchen.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('fetch', event => {
   event.respondWith(
@@ -70,7 +70,7 @@ self.addEventListener('fetch', event => {
                         Diese Strategie stellt zuerst eine Netzwerk-Anfrage. Wenn die Anfrage fehlschlägt (z.B. weil der Benutzer offline ist), wird die Antwort aus dem Cache geliefert. Dies stellt sicher, dass die neuesten Daten verwendet werden.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('fetch', event => {
   event.respondWith(
@@ -102,7 +102,7 @@ self.addEventListener('fetch', event => {
                         Diese Strategie liefert eine gecachte Antwort sofort und aktualisiert gleichzeitig den Cache im Hintergrund mit einer neuen Antwort vom Netzwerk. Dies bietet eine Kombination aus schneller Reaktion und aktuellen Daten.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('fetch', event => {
   event.respondWith(
@@ -150,7 +150,7 @@ self.addEventListener('fetch', event => {
                         Dynamisches Caching ermöglicht es, zur Laufzeit Ressourcen im Cache zu speichern. Dies ist besonders nützlich für Ressourcen, deren Inhalt sich häufig ändert.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('fetch', event => {
   event.respondWith(

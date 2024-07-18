@@ -11,23 +11,25 @@ import Extended from "../Sections/SW/Extended/Extended.tsx";
 import BestPractices from "../Sections/SW/BestPractices.tsx";
 import VitePWA from "../Sections/SW/VitePWA.tsx"
 import SWIntro from "../Sections/SW/SWIntro.tsx";
+import Menu from "../Components/Menu.tsx";
 
 const Sw = () => {
   return (
     <div>
-        <SWIntro />
-        <Description />
-        <Pros />
-        <LifecycleSquares/>
-        <Lifecycle/>
-        <ActionsSquares />
-        <Actions/>
-        <CachingSquares />
-        <Caching />
-        <ExtendedSquares />
-        <Extended />
-        <BestPractices />
-        <VitePWA />
+      <Menu />
+      <SWIntro />
+      <Description />
+      <Pros />
+      <LifecycleSquares />
+      <Lifecycle />
+      <ActionsSquares />
+      <Actions />
+      <CachingSquares />
+      <Caching />
+      <ExtendedSquares />
+      <Extended />
+      <BestPractices />
+      <VitePWA />
     </div>
   )
 }

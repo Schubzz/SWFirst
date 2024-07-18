@@ -14,7 +14,7 @@ const Extended = () => {
     };
 
     return (
-        <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black bg-opacity-50 text-white">
+        <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center justify-center min-h-screen w-screen bg-black text-white">
             <div className="max-w-4xl w-full">
                 <h2 className="text-5xl font-bold mb-8 text-center">Konzepte</h2>
 
@@ -26,7 +26,7 @@ const Extended = () => {
                         Hintergrundsynchronisation ermöglicht es, Daten im Hintergrund zu synchronisieren, auch wenn die Anwendung nicht aktiv genutzt wird. Dies verbessert die Zuverlässigkeit und Benutzererfahrung.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('sync', event => {
   if (event.tag === 'sync-tag') {
@@ -62,7 +62,7 @@ self.addEventListener('sync', event => {
                         Push-Benachrichtigungen ermöglichen es, Benutzer über wichtige Ereignisse zu informieren, auch wenn die Webanwendung geschlossen ist.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('push', event => {
   const data = event.data.json();
@@ -106,7 +106,7 @@ self.addEventListener('push', event => {
                         Diese Funktion ermöglicht es, regelmäßige Hintergrundaufgaben auszuführen, z.B. das Aktualisieren von Inhalten.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('periodicsync', event => {
   if (event.tag === 'periodic-sync-tag') {
@@ -142,7 +142,7 @@ self.addEventListener('periodicsync', event => {
                         Diese Funktion ermöglicht es, Benutzer über neue Inhalte zu informieren und die Anwendung zu aktualisieren.
                     </p>
 
-                    <div className="relative code-container bg-gray-800 rounded-md p-4 w-full">
+                    <div className="code-container">
                         <CopyButton
                             textToCopy={`self.addEventListener('updatefound', () => {
   const installingWorker = self.installing;

@@ -1,6 +1,6 @@
 const BestPractices = () => {
     return (
-        <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center min-h-screen justify-center  w-screen bg-black bg-opacity-50 text-white">
+        <section className="custom-shadow p-10 flex flex-col gap-10 overflow-x-hidden items-center min-h-screen justify-center  w-screen bg-black  text-white">
             <div className="max-w-4xl w-full">
 
                 {/* Best Practices für Service Worker */}

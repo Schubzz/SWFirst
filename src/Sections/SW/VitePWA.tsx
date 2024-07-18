@@ -5,7 +5,7 @@ const VitePWA = () => {
     return (
         <section>
             <div
-                className="flex flex-wrap p-10 bg-black bg-opacity-50 overflow-x-hidden justify-center items-center gap-20 md:gap-60 md:gap-y-2 md:min-h-[80vh] w-screen">
+                className="flex flex-wrap p-10 bg-black bg-opacity-85 overflow-x-hidden justify-center items-center gap-20 md:gap-60 md:gap-y-2 md:min-h-[80vh] w-screen">
 
                 <div>
                     <h2 className="mb-6 text-left text-3xl md:text-5xl"><span

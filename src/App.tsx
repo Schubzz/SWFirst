@@ -9,6 +9,7 @@ function App() {
     return (
         <Router>
             <ScrollToTop />
+            
             <Routes>
                 <Route path="/" element={<SW />} />
                 <Route path="/pwa" element={<PWA />} />

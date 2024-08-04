@@ -3,7 +3,6 @@ const Description = () => {
         <section>
             <div
                 className="flex flex-wrap p-10 bg-black overflow-x-hidden justify-center items-center gap-20 md:gap-60 min-h-screen w-screen">
-
                 <div>
                     <h2 className="mb-6 text-left text-3xl md:text-5xl"><span
                         className="text-white">Was sind</span><br/> Service Worker ?</h2>

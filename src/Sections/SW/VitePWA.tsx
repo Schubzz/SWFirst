@@ -21,7 +21,7 @@ const VitePWA = () => {
                         da sie ein tiefes Verständnis der Web-APIs und sorgfältiges Management von Caching-Strategien erfordern.
                         Um diese Herausforderung zu bewältigen, stehen allerdings verschiedene Plugins und Tools zur Verfügung,
                         die den Prozess erheblich vereinfachen. Ein prominentes Beispiel hierfür ist das<span className="font-extrabold">
-                            <span className="text-yellow-400">Vite</span>P<span className="text-blue-400">W</span>
+                            <span className="text-yellow-400"> Vite</span>P<span className="text-blue-400">W</span>
                             <span className="text-yellow-400">A</span>-Plugin</span>, das eine nahtlose Integration von
                         Service Workern in Vite-Projekte ermöglicht und die Erstellung von PWAs mit minimalem
                         Konfigurationsaufwand unterstützt.

@@ -3,6 +3,7 @@ import PWABadge from './PWABadge.tsx';
 import './App.css';
 import SW from "./Pages/SW.tsx";
 import PWA from "./Pages/PWA.tsx";
+import Sources from './Pages/Sources.tsx';
 import ScrollToTop from './Components/ScrollToTop.tsx';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<SW />} />
                 <Route path="/pwa" element={<PWA />} />
+                <Route path="/sources" element={<Sources />} />
             </Routes>
 
             <PWABadge />

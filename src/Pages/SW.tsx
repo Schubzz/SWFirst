@@ -6,8 +6,6 @@ import Actions from "../Sections/SW/Actions/Actions.tsx";
 import ActionsSquares from "../Sections/SW/Actions/ActionsSquares.tsx";
 import Caching from "../Sections/SW/Caching/Caching.tsx";
 import CachingSquares from "../Sections/SW/Caching/CachingSquares.tsx";
-import ExtendedSquares from "../Sections/SW/Extended/ExtendedSquares.tsx";
-import Extended from "../Sections/SW/Extended/Extended.tsx";
 import BestPractices from "../Sections/SW/BestPractices.tsx";
 import VitePWA from "../Sections/SW/VitePWA.tsx"
 import SWIntro from "../Sections/SW/SWIntro.tsx";
@@ -28,8 +26,6 @@ const Sw = () => {
       <Actions />
       <CachingSquares />
       <Caching />
-      <ExtendedSquares />
-      <Extended />
       <BestPractices />
       <VitePWA />
     </div>

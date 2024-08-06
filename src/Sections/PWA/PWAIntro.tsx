@@ -13,9 +13,7 @@ const PWAIntro = () => {
                     <p className="text-[1rem] md:text-xl max-w-lg">
                         Diese Anwendung ist eine mit VitePWA erstellte Progressive Web App (PWA). In dieser Anleitung zeige ich dir Schritt für Schritt, wie du eine PWA mit Vite und dem VitePWA-Plugin erstellst. Du wirst lernen, wie du Vite einrichtest, das VitePWA-Plugin konfigurierst und die Vorteile von PWAs, wie Offline-Fähigkeiten und schnelle Ladezeiten, in deiner Webanwendung implementierst.
                     </p>
-                    <p className="text-[.75rem] md:text-s max-w-lg text-accent">
-                        <a href="https://vite-pwa-org.netlify.app/guide/" target="blank">Vite PWA Dokumentation</a>
-                    </p>
+                    <p className="text-accent text-xs my-2">Lesezeit ca. 10 Minuten</p>
                 </div>
 
                 <img src="VitePWA.svg" alt="VitePWA Logo"

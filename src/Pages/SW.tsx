@@ -10,26 +10,27 @@ import BestPractices from "../Sections/SW/BestPractices.tsx";
 import VitePWA from "../Sections/SW/VitePWA.tsx"
 import SWIntro from "../Sections/SW/SWIntro.tsx";
 import Menu from "../Components/Menu.tsx";
-import QuellenDownload from "../Components/QDownload.tsx";
+import Footer from "../Components/Footer.tsx";
 
 const Sw = () => {
-  return (
-    <div className="relative">
-      <QuellenDownload />
-      <Menu />
-      <SWIntro />
-      <Description />
-      <Pros />
-      <LifecycleSquares />
-      <Lifecycle />
-      <ActionsSquares />
-      <Actions />
-      <CachingSquares />
-      <Caching />
-      <BestPractices />
-      <VitePWA />
-    </div>
-  )
+    return (
+        <div className="relative">
+            {/*<QuellenDownload />*/}
+            <Menu/>
+            <SWIntro/>
+            <Description/>
+            <Pros/>
+            <LifecycleSquares/>
+            <Lifecycle/>
+            <ActionsSquares/>
+            <Actions/>
+            <CachingSquares/>
+            <Caching/>
+            <BestPractices/>
+            <VitePWA/>
+            <Footer/>
+        </div>
+    )
 }
 
 export default Sw

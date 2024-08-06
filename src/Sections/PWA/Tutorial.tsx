@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CopyButton from "../../Components/CopyButton";
+import {Link} from "react-router-dom";
 
 const Tutorial = () => {
     const [copiedButton, setCopiedButton] = useState<string | null>(null);
@@ -19,7 +20,8 @@ const Tutorial = () => {
                     <h3 className="text-3xl font-semibold my-6">Projekt initialisieren</h3>
 
                     <p className="mb-6">
-                        Zuerst initialisieren wir unser Projekt im Terminal. Wechsle in dein bevorzugtes Verzeichnis und starte den Initialisierungsbefehl:
+                        Zuerst initialisieren wir unser Projekt im Terminal. Wechsle in dein bevorzugtes Verzeichnis und
+                        starte den Initialisierungsbefehl:
                     </p>
 
                     <div className="code-container">
@@ -38,7 +40,8 @@ npm create @vite-pwa/pwa@latest
                     </div>
 
                     <p className="my-6">
-                        Während des Prozesses wirst du aufgefordert, einige Eingaben zu machen. In meinem Fall habe ich die folgenden Eingaben verwendet:
+                        Während des Prozesses wirst du aufgefordert, einige Eingaben zu machen. In meinem Fall habe ich
+                        die folgenden Eingaben verwendet:
                         <ul className="my-6 list-disc list-inside">
                             <li>Project name: SWFirst</li>
                             <li>Framework: React</li>
@@ -48,7 +51,8 @@ npm create @vite-pwa/pwa@latest
                             <li>PWA Description: Eine Beschreibung für SWFirst</li>
                             <li>Theme color: #ffffff</li>
                         </ul>
-                        Du kannst die Theme-Farbe später noch ändern, also musst du dich hier nicht festlegen.
+                        Du kannst den "PWA Name", den "PWA Short Name", die "Description" sowie die "Theme color" später
+                        noch ändern, also musst du dich hier nicht zwingend festlegen.
                     </p>
                 </div>
 
@@ -59,23 +63,29 @@ npm create @vite-pwa/pwa@latest
                     <h3 className="text-3xl font-semibold my-6">Strategie wählen</h3>
 
                     <p className="mb-8">
-                        Beim letzten Punkt <span className="text-accent">"strategy"</span> wirst du gefragt, welche Strategie du verwenden möchtest. Hier ein kurzer Überblick aus der Vite-Dokumentation:
+                        Beim letzten Punkt <span className="text-accent">"strategy"</span> wirst du gefragt, welche
+                        Strategie du verwenden möchtest. Hier ein kurzer Überblick aus der Vite-Dokumentation:
                     </p>
 
                     <p className="mb-8">
-                        <strong>generateSW:</strong> Vite-Plugin-PWA generiert den Service Worker für dich, du musst den Code für den Service Worker nicht selbst schreiben.
+                        <strong>generateSW:</strong> Vite-Plugin-PWA generiert den Service Worker für dich, du musst den
+                        Code für den Service Worker nicht selbst schreiben.
                     </p>
 
                     <p className="mb-8">
-                        <strong>injectManifest:</strong> Vite-Plugin-PWA kompiliert deinen benutzerdefinierten Service Worker und injiziert dessen Precache-Manifest.
+                        <strong>injectManifest:</strong> Vite-Plugin-PWA kompiliert deinen benutzerdefinierten Service
+                        Worker und injiziert dessen Precache-Manifest.
                     </p>
 
                     <p className="mb-8">
-                        <a href="https://vite-pwa-org.netlify.app/guide/service-worker-strategies-and-behaviors#service-worker-strategies" target="_blank" rel="noopener noreferrer" className="text-accent underline">Mehr zur Strategie hier</a>
+                        <a href="https://vite-pwa-org.netlify.app/guide/service-worker-strategies-and-behaviors#service-worker-strategies"
+                           target="_blank" rel="noopener noreferrer" className="text-accent underline">Mehr zur
+                            Strategie hier</a>
                     </p>
 
                     <p className="mb-8">
-                        Ich entscheide mich hier für die erste Variante, also lasse ich einen Service Worker generieren, um es einfacher zu gestalten. Die vollständige Initialisierung sieht dann so aus:
+                        Ich entscheide mich hier für die erste Variante, also lasse ich einen Service Worker generieren,
+                        um es einfacher zu gestalten. Die vollständige Initialisierung sieht dann so aus:
                     </p>
 
                     <div className="code-container">
@@ -139,7 +149,8 @@ Done. Now run:
                     <h3 className="text-3xl font-semibold my-6">Abhängigkeiten installieren</h3>
 
                     <p className="mb-8">
-                        Nachdem das Projekt erstellt wurde, wechsle in das Projektverzeichnis und installiere die Abhängigkeiten:
+                        Nachdem das Projekt erstellt wurde, wechsle in das Projektverzeichnis und installiere die
+                        Abhängigkeiten:
                     </p>
 
                     <div className="code-container">
@@ -165,7 +176,8 @@ npm install
                     <h3 className="text-3xl font-semibold my-6">Projekt in VSCode öffnen</h3>
 
                     <p className="mb-8">
-                        Öffne das Projekt in deienr IDE. Ich nutze hier VSCode. Für VSCode kannst du im Terminal den folgenden Befehl verwenden:
+                        Öffne das Projekt in deiner IDE. Ich nutze hier VSCode. Für VSCode kannst du im Terminal den
+                        folgenden Befehl verwenden:
                     </p>
 
                     <div className="code-container">
@@ -189,7 +201,8 @@ code .
                     <h3 className="text-3xl font-semibold my-6">VitePWA Plugin installieren</h3>
 
                     <p className="mb-8">
-                        Öffne ein neues Terminal in VSCode und installiere das VitePWA Plugin als Entwicklungsabhängigkeit:
+                        Öffne ein neues Terminal in VSCode und installiere das VitePWA Plugin als
+                        Entwicklungsabhängigkeit:
                     </p>
 
                     <div className="code-container">
@@ -213,7 +226,8 @@ npm install -D vite-plugin-pwa
                     <h3 className="text-3xl font-semibold my-6">Vite Konfiguration anpassen</h3>
 
                     <p className="mb-8">
-                        Öffne die <code className="text-accent">vite.config.ts</code> Datei. Die durch das Plugin erstellte Konfigurationsdatei sieht so aus:
+                        Öffne die <code className="text-accent">vite.config.ts</code> Datei. Die durch das Plugin
+                        erstellte Konfigurationsdatei sieht so aus:
                     </p>
 
                     <div className="code-container">
@@ -298,7 +312,8 @@ export default defineConfig({
                     </div>
 
                     <p className="my-8">
-                        Ändere <code>enabled: false</code> zu <code>true</code>, damit du den Service Worker auch während der Entwicklung testen kannst:
+                        Ändere <code>enabled: false</code> zu <code>true</code>, damit du den Service Worker auch
+                        während der Entwicklung testen kannst:
                     </p>
 
                     <div className="code-container">
@@ -345,7 +360,8 @@ npm run dev`}</pre>
                     </div>
 
                     <p className="my-8">
-                        Die Anwendung startet und du kannst den Service Worker sowie das Manifest in den DevTools unter dem Reiter "Application" sehen.
+                        Die Anwendung startet und du kannst den Service Worker sowie das Manifest in den DevTools unter
+                        dem Reiter "Application" sehen.
                     </p>
                 </div>
 
@@ -356,11 +372,16 @@ npm run dev`}</pre>
                     <h3 className="text-3xl font-semibold my-6">Anwendung als PWA testen</h3>
 
                     <p className="mb-8">
-                        Die Anwendung ist jetzt bereits eine PWA, was bedeutet, dass sie offline funktioniert und installiert werden kann. Um dies zu testen, kannst du die Anwendung im Browser öffnen und das Installationssymbol in der Adressleiste sehen. Du kannst auch die Offline-Fähigkeit testen, indem du die Anwendung im Browser öffnest, das Netzwerk deaktivierst und die Seite neu lädst. Die Ressourcen sollten weiterhin verfügbar sein.
+                        Die Anwendung ist jetzt bereits eine PWA, was bedeutet, dass sie offline funktioniert und
+                        installiert werden kann. Um dies zu testen, kannst du die Anwendung im Browser öffnen und das
+                        Installationssymbol in der Adressleiste sehen. Du kannst auch die Offline-Fähigkeit testen,
+                        indem du die Anwendung im Browser öffnest, das Netzwerk deaktivierst und die Seite neu lädst.
+                        Die Ressourcen sollten weiterhin verfügbar sein.
                     </p>
 
                     <p className="mb-8">
-                        Im nächsten Schritt solltest du das Manifest anpassen, um die Identität der Anwendung festzulegen. Hier ist ein Beispiel, wie du das Manifest konfigurieren kannst:
+                        Im nächsten Schritt solltest du das Manifest anpassen, um die Identität der Anwendung
+                        festzulegen. Hier ist ein Beispiel, wie du das Manifest konfigurieren kannst:
                     </p>
 
                     <div className="code-container">
@@ -480,38 +501,50 @@ manifest: {
                         In dieser Manifest-Konfiguration wurden verschiedene Eigenschaften der Anwendung festgelegt:
                         <ul className="mt-4 list-disc list-inside">
                             <li>
-                                <strong className="text-accent">theme_color</strong>: Die Farbe, die für die Titelleiste und das Hintergrunddesign verwendet wird.
+                                <strong className="text-accent">theme_color</strong>: Die Farbe, die für die Titelleiste
+                                und das Hintergrunddesign verwendet wird.
                             </li>
                             <li>
-                                <strong className="text-accent">background_color</strong>: Die Hintergrundfarbe der Anwendung.
+                                <strong className="text-accent">background_color</strong>: Die Hintergrundfarbe der
+                                Anwendung.
                             </li>
                             <li>
-                                <strong className="text-accent">display</strong>: Definiert, wie die Anwendung angezeigt wird, z.B. als Standalone-Anwendung.
+                                <strong className="text-accent">display</strong>: Definiert, wie die Anwendung angezeigt
+                                wird, z.B. als Standalone-Anwendung.
                             </li>
                             <li>
                                 <strong className="text-accent">scope</strong>: Der Bereich der Anwendung.
                             </li>
                             <li>
-                                <strong className="text-accent">start_url</strong>: Die URL, die beim Start der Anwendung geladen wird.
+                                <strong className="text-accent">start_url</strong>: Die URL, die beim Start der
+                                Anwendung geladen wird.
                             </li>
                             <li>
-                                <strong className="text-accent">name</strong> und <strong className="text-accent">short_name</strong>: Der Name und Kurzname der Anwendung.
+                                <strong className="text-accent">name</strong> und <strong
+                                className="text-accent">short_name</strong>: Der Name und Kurzname der Anwendung.
                             </li>
                             <li>
-                                <strong className="text-accent">description</strong>: Eine kurze Beschreibung der Anwendung.
+                                <strong className="text-accent">description</strong>: Eine kurze Beschreibung der
+                                Anwendung.
                             </li>
                             <li>
-                                <strong className="text-accent">icons</strong>: Eine Liste von Symbolen in verschiedenen Größen und Zwecken.
+                                <strong className="text-accent">icons</strong>: Eine Liste von Symbolen in verschiedenen
+                                Größen und Zwecken.
                             </li>
                             <li>
                                 <strong className="text-accent">screenshots</strong>: Screenshots der Anwendung.
                             </li>
                         </ul>
                     </p>
-                    <p className="mb-8">Schaust du in die Dev-Tools deines Browsers, wird dir unter Manifest angezeigt, welche Assets du vielleicht noch benötigst, und wie diese dimensioniert werden müssen. Dort findest du auch i.d.R. einen Link zu detaillierteren Erklärungen zu einzelnen Assets. <br />
-                        Ich habe meine Assets mit Affinity Designer erstellt und diese im Public Ordner meiner Anwendung gespeichert.
+                    <p className="mb-8">Schaust du in die Dev-Tools deines Browsers, wird dir unter "Application -
+                        Manifest" angezeigt, welche Assets du vielleicht noch benötigst, und wie diese dimensioniert
+                        werden müssen. Dort findest du auch i.d.R. einen Link zu detaillierteren Erklärungen zu
+                        einzelnen Assets. <br/>
+                        Ich habe meine Assets mit Affinity Designer erstellt und diese im Public Ordner meiner Anwendung
+                        gespeichert.
                     </p>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="blank" className="text-accent">Weitere Infos zum Manifest</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="blank"
+                       className="text-accent">Weitere Infos zum Manifest</a>
 
                 </div>
 
@@ -522,19 +555,28 @@ manifest: {
                     <h3 className="text-3xl font-semibold my-6">Optionale Ergänzungen</h3>
 
                     <p className="mb-8">
-                        Um die Anwendung verfügbar zu machen, nutze ich GitHub für die Versionskontrolle und Vercel für das Continuous Deployment (CD). Das bedeutet, dass die Anwendung bei jedem Push in das GitHub-Repository automatisch auf Vercel bereitgestellt wird.
+                        Um die Anwendung verfügbar zu machen, nutze ich GitHub für die Versionskontrolle und Vercel für
+                        das Continuous Deployment (CD). Das bedeutet, dass die Anwendung bei jedem Push in das
+                        GitHub-Repository automatisch auf Vercel bereitgestellt wird.
                     </p>
 
                     <p className="mb-8">
-                        Zusätzlich wurden TailwindCSS und Framer Motion installiert, um die Benutzeroberfläche zu gestalten und Animationen zu ermöglichen. Weitere Informationen zu den Installations- und Nutzungsschritten findest du hier:
+                        Zusätzlich wurden TailwindCSS und Framer Motion installiert, um die Benutzeroberfläche zu
+                        gestalten und Animationen zu ermöglichen. Weitere Informationen zu den Installations- und
+                        Nutzungsschritten findest du hier:
                         <ul className="mt-4 list-disc list-inside">
-                            <li><a href="https://tailwindcss.com/docs/installation/using-postcss" target="blank" className="text-accent underline">TailwindCSS</a></li>
-                            <li><a href="https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=PerformanceMax-Framer_&gad_source=1&gclid=Cj0KCQjw-uK0BhC0ARIsANQtgGOrY2TND4HAQVVB0mZdWaJ2_Z2uB9FNosFJGkBC1WsDge6k1VCoMFsaAjSrEALw_wcB" target="blank" className="text-accent underline">Framer Motion</a></li>
+                            <li><a href="https://tailwindcss.com/docs/installation/using-postcss" target="blank"
+                                   className="text-accent underline">TailwindCSS</a></li>
+                            <li><a
+                                href="https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=PerformanceMax-Framer_&gad_source=1&gclid=Cj0KCQjw-uK0BhC0ARIsANQtgGOrY2TND4HAQVVB0mZdWaJ2_Z2uB9FNosFJGkBC1WsDge6k1VCoMFsaAjSrEALw_wcB"
+                                target="blank" className="text-accent underline">Framer Motion</a></li>
                         </ul>
                     </p>
 
                     <p className="mb-8">
-                        Die Anwendung ist jetzt grundsätzlich bereit und kann nach Belieben erweitert und bearbeitet werden. Weitere Anpassungen und Funktionen können hinzugefügt werden, um die Anwendung genau an deine Bedürfnisse anzupassen.
+                        Die Anwendung ist jetzt grundsätzlich bereit und kann nach Belieben erweitert und bearbeitet
+                        werden. Weitere Anpassungen und Funktionen können hinzugefügt werden, um die Anwendung genau an
+                        deine Bedürfnisse anzupassen.
                     </p>
                 </div>
 
@@ -545,22 +587,39 @@ manifest: {
                     <h3 className="text-3xl font-semibold my-6">Eigene Service Worker mit Vite PWA und Workbox</h3>
 
                     <p className="mb-8">
-                        Vite PWA integriert die Workbox-Bibliothek und generiert automatisch mehrere Dateien, um die grundlegenden Funktionen eines Service Workers bereitzustellen. Diese Dateien findest du im Ordner <code className="text-accent italic">dev-dist</code> deiner Anwendung. Dazu gehören:
+                        Vite PWA integriert die Workbox-Bibliothek und generiert automatisch mehrere Dateien, um die
+                        grundlegenden Funktionen eines Service Workers bereitzustellen. Diese Dateien findest du im
+                        Ordner <code className="text-accent italic">dev-dist</code> deiner Anwendung. Dazu gehören:
                     </p>
                     <ul className="list-disc list-inside mb-8">
-                        <li><code className="text-accent">suppress-warnings.js</code>: Diese Datei unterdrückt bestimmte Warnungen während der Entwicklung.</li>
-                        <li><code className="text-accent">sw.js</code>: Dies ist das Haupt-Service-Worker-Skript, das von Workbox generiert wird.</li>
-                        <li><code className="text-accent">workbox-b5f7729d.js</code>: Dies ist eine von Workbox generierte Datei, die notwendige Bibliotheksfunktionen bereitstellt. Die Zahlen können je nach Version variieren.</li>
+                        <li><code className="text-accent">suppress-warnings.js</code>: Diese Datei unterdrückt bestimmte
+                            Warnungen während der Entwicklung.
+                        </li>
+                        <li><code className="text-accent">sw.js</code>: Dies ist das Haupt-Service-Worker-Skript, das
+                            von Workbox generiert wird.
+                        </li>
+                        <li><code className="text-accent">workbox-b5f7729d.js</code>: Dies ist eine von Workbox
+                            generierte Datei, die notwendige Bibliotheksfunktionen bereitstellt. Die Zahlen können je
+                            nach Version variieren.
+                        </li>
                     </ul>
 
                     <h4 className="text-2xl font-semibold my-4">Was ist Workbox?</h4>
                     <p className="mb-8">
-                        Workbox ist eine leistungsstarke JavaScript-Bibliothek, die von Google entwickelt wurde, um die Erstellung von Service Workern zu vereinfachen. Sie bietet eine Reihe von Werkzeugen und APIs, die die Implementierung von Caching-Strategien, das Vorladen von Ressourcen und das Managen von Updates erleichtern. Workbox abstrahiert viele der komplexen Aspekte der Service Worker-Programmierung und macht es einfacher, zuverlässige und leistungsstarke Progressive Web Apps (PWAs) zu erstellen.
+                        Workbox ist eine leistungsstarke JavaScript-Bibliothek, die von Google entwickelt wurde, um die
+                        Erstellung von Service Workern zu vereinfachen. Sie bietet eine Reihe von Werkzeugen und APIs,
+                        die die Implementierung von Caching-Strategien, das Vorladen von Ressourcen und das Managen von
+                        Updates erleichtern. Workbox abstrahiert viele der komplexen Aspekte der Service
+                        Worker-Programmierung und macht es einfacher, zuverlässige und leistungsstarke Progressive Web
+                        Apps (PWAs) zu erstellen.
                     </p>
 
-                    <h4 className="text-2xl font-semibold my-4">Anpassen und Erweitern des generierten Service Worker Skripts</h4>
+                    <h4 className="text-2xl font-semibold my-4">Anpassen und Erweitern des generierten Service Worker
+                        Skripts</h4>
                     <p className="mb-8">
-                        Das generierte <code>sw.js</code> Skript kann angepasst werden, um zusätzliche Funktionalitäten und Caching-Strategien hinzuzufügen. Hier ist ein Beispiel, wie du das generierte Skript erweitern kannst:
+                        Das generierte <code>sw.js</code> Skript kann angepasst werden, um zusätzliche Funktionalitäten
+                        und Caching-Strategien hinzuzufügen. Hier ist ein Beispiel, wie du das generierte Skript
+                        erweitern kannst:
                     </p>
 
                     <div className="code-container">
@@ -605,7 +664,18 @@ registerRoute(
                 </div>
 
                 <p className="my-8">
-                    Weitere Informationen zu Workbox findest du in der offiziellen <a href="https://developers.google.com/web/tools/workbox" target="blank" className="text-accent underline">Workbox-Dokumentation</a>.
+                    Weitere Informationen zu Workbox findest du in der offiziellen <a
+                    href="https://developers.google.com/web/tools/workbox" target="blank"
+                    className="text-accent underline">Workbox-Dokumentation</a>.
+                </p>
+
+                <h3 className="mt-12">Und jetzt?</h3>
+
+                <p className="my-8">
+                    Mit diesem Leitfaden und dem Tutorial bist du gut gerüstet, eine Webanwendung zu bauen, die installierbar ist, dadurch sogar einen nativen App-Charakter haben kann, offlinefähig ist und auch durch geschickte Caching-Strategien sehr performant sein kann!
+                    <br/>
+                    Um dein neugewonnenes Wissen zu erweitern und zu vertiefen, gibt es noch ein paar
+                   <Link to="/sources" className="text-accent underline"> wertvolle Quellen</Link>, wo du nochmal alle relevanten Infos findest.
                 </p>
             </div>
         </section>
